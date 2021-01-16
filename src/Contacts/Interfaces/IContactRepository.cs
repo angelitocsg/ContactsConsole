@@ -9,7 +9,8 @@ namespace Contacts.Interfaces
         Guid Add(Contact contact);
         bool Update(Contact contact);
         bool Delete(Guid id);
-        Contact GetById(Guid id);
+        Contact GetByPartialId(string id);
         IEnumerable<Contact> GetAll();
+        IEnumerable<Contact> GetAllBySearch(string searchText);
     }
 }

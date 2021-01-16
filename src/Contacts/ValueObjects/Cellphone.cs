@@ -14,6 +14,8 @@ namespace Contacts.ValueObjects
 
         private bool ValidateCellphone(string cellphone)
         {
+            //(\(?\d{2}\)?\s)?(\d{4,5}\-\d{4})
+            //\(\d{2,}\) \d{4,}\-\d{4}
             var regex = new System.Text.RegularExpressions.Regex(@"(\(?\d{2}\)?\s)?(\d{4,5}\-\d{4})");
             return regex.IsMatch(cellphone);
         }

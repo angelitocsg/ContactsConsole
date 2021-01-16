@@ -5,7 +5,7 @@ namespace Contacts.Entities
 {
     public class Contact
     {
-        public Contact(Guid id, string name, Address cellphone, Email email, Address address)
+        public Contact(Guid id, string name, Cellphone cellphone, Email email, Address address)
         {
             if (!ValidateName(name))
                 throw new System.Exception("Enter a valid name!");
@@ -17,7 +17,7 @@ namespace Contacts.Entities
             Address = address;
         }
 
-        public Contact New(string name, Address cellphone, Email email, Address address)
+        public static Contact New(string name, Cellphone cellphone, Email email, Address address)
         {
             return new Contact(Guid.NewGuid(), name, cellphone, email, address);
         }
@@ -26,8 +26,13 @@ namespace Contacts.Entities
 
         public Guid Id { get; set; }
         public string Name { get; set; }
-        public Address Cellphone { get; set; }
+        public Cellphone Cellphone { get; set; }
         public Email Email { get; set; }
         public Address Address { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Id.ToString().Substring(0, 8)}   {Name.PadRight(30)}{Cellphone}";
+        }
     }
 }
