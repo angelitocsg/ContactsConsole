@@ -46,3 +46,11 @@ Add project to solution:
 dotnet sln ..\Contacts.sln add Contacts\
 ```
 
+## Create classes
+
+1. Entities
+2. ValueObjects
+3. Interfaces
+4. Repositories
+5. Services
+6. Controllers
