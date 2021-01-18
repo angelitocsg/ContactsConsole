@@ -20,24 +20,24 @@ namespace Contacts.Repositories
         private void Mockup()
         {
             Contacts.Add(
-                Contact.New("Angelito Casagrande",
-                new Cellphone("(11) 98765-1234"),
-                new Email("angelito@test.com"),
-                new Address("Rua Test", 123, "Bairro Test", "Cidade Test", "SP")
+                Contact.New("Google Brasil",
+                new Cellphone("(11) 2395-8400"),
+                new Email("google@google.com"),
+                new Address("Avenida Bridadeiro Faria Lima", 3477, "Itam Bibi", "São Paulo", "SP")
             ));
 
             Contacts.Add(
-                Contact.New("João Silva",
-                new Cellphone("(11) 12345-1234"),
-                new Email("joao.silva@test.com"),
-                new Address("Rua Joao", 123, "Bairro Joao", "Cidade Joao", "SP")
+                Contact.New("Microsoft Brasil",
+                new Cellphone("(11) 5504-2155"),
+                new Email("microsoft@microsoft.com"),
+                new Address("Avenida Presidente Juscelino Kubitscheck", 1909, "Vila Nova Conceição", "São Paulo", "SP")
             ));
 
             Contacts.Add(
-                Contact.New("Maria Antonieta",
-                new Cellphone("(11) 9991-4567"),
-                new Email("maria.antonieta@test.com"),
-                new Address("Rua Maria", 123, "Bairro Maria", "Cidade Maria", "SP")
+                Contact.New("SAP Brasil",
+                new Cellphone("(11) 5503-2400"),
+                new Email("sap@sap.com"),
+                new Address("Avenida das Nações Unidas", 14171, "Vila Almeida", "São Paulo", "SP")
             ));
         }
 
